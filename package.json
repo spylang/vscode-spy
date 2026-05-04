@@ -1,0 +1,72 @@
+{
+  "name": "spy-lang",
+  "displayName": "SPy Language Support for VSCode",
+  "description": "Syntax highlighting, indentation, comments and Ruff formatting for .spy files",
+  "version": "0.1.0",
+  "publisher": "spy-lang",
+  "icon": "spy-logo.png",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Formatters"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "spy",
+        "aliases": [
+          "SPy",
+          "spy"
+        ],
+        "extensions": [
+          ".spy"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/spy-light.png",
+          "dark": "./icons/spy-dark.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "spy",
+        "scopeName": "source.spy",
+        "path": "./syntaxes/spy.tmLanguage.json"
+      }
+    ],
+    "configuration": {
+      "title": "SPy",
+      "properties": {
+        "spy.formatting.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable formatting with Ruff on save"
+        },
+        "spy.formatting.ruffPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the ruff executable. Leave empty to use the one in PATH."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/spylang/vscode-spy.git"
+  }
+}

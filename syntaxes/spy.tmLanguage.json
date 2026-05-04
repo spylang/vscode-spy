@@ -1,0 +1,11 @@
+{
+  "name": "SPy",
+  "scopeName": "source.spy",
+  "fileTypes": ["spy"],
+  "patterns": [
+    {
+      "include": "source.python"
+    }
+  ],
+  "repository": {}
+}
