@@ -30,6 +30,12 @@
    code --install-extension spy-lang-0.1.0.vsix
    ```
 
-## Publishing to the Marketplace
+## Publish
 
-Run `vsce publish`
+### Official Marketplace
+
+Run `vsce publish` or just upload the .vsix file.
+
+### VSCodium extensions
+
+Upload the .vsix file in https://open-vsx.org/user-settings/extensions.
