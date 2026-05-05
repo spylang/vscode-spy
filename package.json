@@ -1,6 +1,6 @@
 {
-  "name": "spy-lang",
-  "displayName": "SPy Language Support for VSCode",
+  "name": "spy-language",
+  "displayName": "Minimal SPy language support",
   "description": "Syntax highlighting, indentation, comments and Ruff formatting for .spy files",
   "version": "0.1.0",
   "publisher": "spy-lang",
