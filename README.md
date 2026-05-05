@@ -43,7 +43,7 @@ Add this to your `.vscode/settings.json`:
 ```json
 {
   "[spy]": {
-    "editor.defaultFormatter": "spy-lang.spy-lang",
+    "editor.defaultFormatter": "spy-lang.spy-language",
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": true
